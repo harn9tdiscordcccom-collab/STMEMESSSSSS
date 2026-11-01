@@ -1,0 +1,9 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>STMEM — Admin Console</title><link rel="stylesheet" href="/style.css"><script type="module" src="/admin.js"></script></head>
+<body><div class="grid-glow"></div><header class="topbar"><a class="brand" href="/">ST<span>MEM</span><i>.</i></a><a class="back" href="/">← MAIN SITE</a></header>
+<main class="admin-shell"><div class="eyebrow">RESTRICTED AREA // ADMIN ONLY</div><h1>CONTROL <span>ROOM.</span></h1><p class="muted">Visitor analytics are visible only to the configured administrator.</p>
+<div class="admin-toolbar"><div><strong id="admin-status">Checking access…</strong><p class="muted" id="admin-email"></p></div><button id="refresh" class="btn secondary">REFRESH</button><button id="export" class="btn primary" disabled>EXPORT CSV</button></div>
+<div id="admin-message" class="message" role="status"></div>
+<div class="stats"><div class="stat"><small>TOTAL RECORDS</small><strong id="total">—</strong></div><div class="stat"><small>VISITS LAST 24H</small><strong id="recent">—</strong></div><div class="stat"><small>DATA ACCESS</small><strong>PRIVATE</strong></div></div>
+<div class="table-wrap"><table><thead><tr><th>VISIT TIME</th><th>IP ADDRESS</th><th>DEVICE</th><th>BROWSER / OS</th><th>SCREEN</th></tr></thead><tbody id="visitor-rows"><tr><td colspan="5">Sign in with the administrator account.</td></tr></tbody></table></div>
+<p class="fineprint">Only consented visits are recorded. Configure a retention period and delete records when no longer needed.</p></main></body></html>

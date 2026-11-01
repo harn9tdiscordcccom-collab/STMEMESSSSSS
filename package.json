@@ -1,0 +1,10 @@
+{
+  "name": "stmem-firebase",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "STMEM gaming login and consent-based visitor analytics using Firebase",
+  "dependencies": {
+    "firebase-admin": "^13.4.0"
+  }
+}

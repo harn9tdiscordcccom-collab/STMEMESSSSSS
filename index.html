@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="STMEM gaming portal">
+  <title>STMEM — Enter the Arena</title>
+  <link rel="stylesheet" href="/style.css">
+  <script type="module" src="/app.js"></script>
+</head>
+<body>
+  <div class="grid-glow"></div>
+  <header class="topbar"><a class="brand" href="/">ST<span>MEM</span><i>.</i></a><span class="status"><b></b> SYSTEM ONLINE</span></header>
+  <main class="shell">
+    <section class="hero">
+      <div class="eyebrow">PLAYER ACCESS // 001</div>
+      <h1>ENTER THE<br><span>ARENA.</span></h1>
+      <p class="lead">Your next session starts here. Sign in to access the STMEM portal.</p>
+      <div class="feature-row"><span>✦ SECURE ACCESS</span><span>✦ PLAYER PORTAL</span><span>✦ STMEM NETWORK</span></div>
+    </section>
+    <section class="panel">
+      <div class="panel-head"><span class="mini-mark">S</span><span class="panel-code">AUTHENTICATION GATE</span></div>
+      <h2>Welcome to STMEM</h2><p class="muted">Choose how you want to sign in.</p>
+      <button id="google-btn" class="btn google"><span class="g">G</span> Continue with Google</button>
+      <div class="or"><span>OR USE EMAIL</span></div>
+      <form id="email-form">
+        <label for="email">EMAIL ADDRESS</label><input id="email" type="email" autocomplete="email" placeholder="player@example.com" required>
+        <label for="password">PASSWORD</label><input id="password" type="password" autocomplete="current-password" placeholder="At least 8 characters" minlength="8" required>
+        <div class="button-row"><button class="btn primary" type="submit">SIGN IN</button><button class="btn secondary" type="button" id="signup-btn">CREATE ACCOUNT</button></div>
+      </form>
+      <p id="message" class="message" role="status" aria-live="polite"></p>
+      <div id="user-area" class="user-area hidden">
+        <p>Signed in as <strong id="user-email"></strong></p>
+        <a id="admin-link" class="btn primary hidden" href="/admin.html">OPEN ADMIN DASHBOARD</a>
+        <button id="logout-btn" class="btn secondary">SIGN OUT</button>
+      </div>
+      <p class="fineprint">By continuing, you agree to the <a href="/privacy.html">Privacy Notice</a>. Optional visitor analytics only start after you consent.</p>
+    </section>
+  </main>
+  <footer>STMEM NETWORK <span>•</span> BUILT FOR THE NEXT LEVEL</footer>
+  <div id="consent" class="consent" role="dialog" aria-labelledby="consent-title">
+    <div><strong id="consent-title">OPTIONAL VISITOR ANALYTICS</strong>
+      <p>With your permission, STMEM records your IP address, browser/device details, screen size and visit time. Only the site administrator can view these records. You can decline and still use the site.</p>
+      <a href="/privacy.html">Read the privacy notice</a>
+    </div>
+    <div class="consent-actions"><button id="decline-consent" class="btn secondary">DECLINE</button><button id="accept-consent" class="btn primary">ALLOW ANALYTICS</button></div>
+  </div>
+</body></html>

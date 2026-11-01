@@ -1,0 +1,10 @@
+rules_version = '2';
+service cloud.firestore {
+  match /databases/{database}/documents {
+    // Browser clients cannot read or write visitor logs.
+    // Netlify Functions use Firebase Admin SDK on the server.
+    match /visitor_events/{document=**} {
+      allow read, write: if false;
+    }
+  }
+}
